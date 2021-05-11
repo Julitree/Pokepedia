@@ -1,0 +1,97 @@
+.searchedPokemonContainer {
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    padding: 70px 0 40px;
+    .containerPokemon {
+        width: 70%;
+        margin: 30px auto 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 11% 0 10%;
+        margin-bottom: 10px;
+        position: relative;
+        background: #ffffff94;
+        box-shadow: 1px 6px 7px #00000069;
+        border-radius: 8px;
+        border: 2px solid red;
+        @include media(tablet) {
+            padding: 6% 0 10%;
+        }
+        .imgContainer {
+            height: 138px;
+            @include media(tablet) {
+                height: 200px;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        h1 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            padding: 22px 20px 15px;
+            color: $normal;
+            @include media(tablet) {
+                font-size: 3rem;
+            }
+        }
+        hr {
+            width: 25%;
+            margin: -2px auto 0;
+            border: 1px solid $normal;
+        }
+        .firstInfo_container {
+            border-bottom: 1px solid $ghost;
+            padding: 34px 10px 10px;
+            display: flex;
+            width: 70%;
+            margin-bottom: 10px;
+            .infoSubtitleWrapper {
+                width: 50%;
+                border-right: 1px solid $ghost;
+                &:nth-child(2) {
+                    border: none;
+                }
+                .title {
+                    color: $grey;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    @include media(tablet) {
+                        font-size: 1.6rem;
+                    }
+                }
+                p {
+                    text-align: center;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .barContainer {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            background: linear-gradient(#ffeb3b, #ffc107);
+            h2 {
+                font-size: 1rem;
+                color: #ffffff;
+                text-transform: capitalize;
+                padding: 10px 20px;
+                background: linear-gradient(#f1820c, #ff3b3b);
+                @include media(tablet) {
+                    font-size: 1.2rem;
+                }
+            }
+            p {
+                width: 50%;
+                height: 100%;
+                text-align: center;
+                padding-left: 10px;
+                @include media(tablet) {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

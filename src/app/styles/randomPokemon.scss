@@ -1,0 +1,19 @@
+#randomPokemon.randomPokemonContainer {
+    background-image: url(../assets/bg_random.jpeg);
+    .containerPokemon {
+        background: #ffffffb3;
+        h1 {
+            color: #424242;
+        }
+        .firstInfo_container {
+            border-bottom: 1px solid #848484;
+            .infoSubtitleWrapper {
+                width: 50%;
+                border-right: 1px solid #848484;
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+        }
+    }
+}

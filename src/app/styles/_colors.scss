@@ -1,0 +1,97 @@
+$white: #FFFFFF;
+$grey: #3E3E3E;
+$primaryColor: #146dc7;
+$secondaryColor: #FFCE00;
+$thirdColor: #393939;
+$fortyColor: #F0F0F0;
+$fire: #F76161;
+$grass: #6DBE00;
+$water: #93EE6B;
+$normal:#FF7024;
+$electric: #F7B400;
+$bug: #386002;
+$ghost: #CEC5C5;
+$flying: #15C259;
+$fighting: rgb(0, 82, 133);
+$psychic: rgb(159, 82, 0);
+$steel:#453E3B;
+$rock: #956D01;
+$ground: #653E00;
+$ice: #0EDBDB;
+$poison: #2EA004;
+$dark: #383838;
+$dragon: #9A0000;
+$fairy: #FF2424;
+.simisear {
+    // background: $fire;
+    background: linear-gradient($fire, #e43535);
+}
+
+.venusaur {
+    // background: $grass;
+    background: linear-gradient($grass, #099000);
+}
+
+.slowbro {
+    background: linear-gradient($water, #4eff00);
+}
+
+.pidgeot {
+    background: linear-gradient($normal, #f70000);
+}
+
+.eelektross {
+    background: linear-gradient($electric, #dec300);
+}
+
+.anorith {
+    background: linear-gradient($bug, #36540c);
+}
+
+.golurk {
+    background: linear-gradient($ghost, #9a9a9a);
+}
+
+.zapdos {
+    background: linear-gradient($flying, #01983d);
+}
+
+.breloom {
+    background: linear-gradient($fighting, #0968a2);
+}
+
+.slowking {
+    background: linear-gradient($psychic, #7b4000)
+}
+
+.sandslash {
+    background: linear-gradient($steel, #484645);
+}
+
+.golem {
+    background: linear-gradient($rock, #846103);
+}
+
+.nidoqueen {
+    background: linear-gradient($ground, #5f3b02);
+}
+
+.delibird {
+    background: linear-gradient($ice, #01adad);
+}
+
+.tentacruel {
+    background: linear-gradient($poison, #3b901c);
+}
+
+.shiftry {
+    background: linear-gradient($dark, #2d2c2c);
+}
+
+.gabite {
+    background: linear-gradient($dragon, #820303);
+}
+
+.whimsicott {
+    background: linear-gradient($fairy, #d00b0b);
+}

@@ -1,0 +1,208 @@
+.home {
+    padding: 70px 0 30px;
+    background: linear-gradient(#0052a5, #146dc7, #0052a5);
+    transition: .5s;
+    @include media(tablet) {
+        padding: 72px 0 30px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 13px 0;
+        background: #fbfbfb;
+        transition: .5s;
+        border-bottom: 1px solid #a2a2a2;
+        button {
+            font-size: 1rem;
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+            border: none;
+            background: $secondaryColor;
+            transition: .5s;
+            @include media(tablet) {
+                font-size: 1.1rem;
+            }
+        }
+        .switch-button {
+            display: inline-block;
+        }
+        .switch-button .switch-button__checkbox {
+            display: none;
+        }
+        .switch-button .switch-button__label {
+            background-color: #dedede;
+            width: 5rem;
+            height: 34px;
+            border-radius: 3rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .switch-button .switch-button__label:before {
+            content: '';
+            transition: .2s;
+            display: block;
+            position: absolute;
+            left: 10px;
+            width: 28px;
+            height: 28px;
+            background-color: #fbfbfb;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 0px 1px var(--color-black);
+        }
+        .switch-button .switch-button__checkbox:checked+.switch-button__label {
+            background-color: #3e3d3d;
+        }
+        .switch-button .switch-button__checkbox:checked+.switch-button__label:before {
+            transform: translateX(2rem);
+        }
+    }
+    .hero {
+        padding-bottom: 30px;
+        .title {
+            font-size: 1.6rem;
+            padding-top: 17px;
+            @include media(tablet) {
+                font-size: 2rem;
+            }
+            @include media(desktop) {
+                font-size: 2.5rem;
+            }
+        }
+        &__content-wrapper {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            padding: 24px 0 43px;
+            border-bottom: 1px dotted white;
+            @include media(tablet) {
+                padding-top: 43px;
+                justify-content: center;
+                width: 81%;
+            }
+        }
+        &__image-container {
+            height: 200px;
+            @include media(tablet) {
+                height: 260px;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        &__paragraph {
+            width: 80%;
+            color: $white;
+            line-height: 1.6rem;
+            text-align: end;
+            @include media(tablet) {
+                width: 60%;
+                font-size: 1.3rem;
+                line-height: 2.3rem;
+            }
+        }
+    }
+    .types-pokemons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__title {
+            color: #ffda3f;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            @include media(tablet) {
+                font-size: 1.8rem;
+            }
+            @include media(desktop) {
+                font-size: 2rem;
+            }
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            grid-gap: 21px;
+            padding-top: 13%;
+            @include media(tablet) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                padding-top: 8%;
+                width: 90%;
+            }
+            @include media(desktop) {
+                grid-template-columns: 1fr 1fr;
+                width: 79%;
+                grid-gap: 30px 40px;
+            }
+            .types-pokemons__blocks {
+                position: relative;
+                height: 67px;
+                width: 77%;
+                cursor: pointer;
+                transition: .5s;
+                &:hover {
+                    transform: translateY(-10px);
+                }
+                @include media(tablet) {
+                    width: 98%;
+                    height: 99px;
+                }
+                p {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: white;
+                    text-transform: capitalize;
+                    text-shadow: 2px 2px 2px #383838;
+                    padding: 10px 43px;
+                    border-radius: 28px 0;
+                    box-shadow: 1px 6px 7px #00000069;
+                    @include media(tablet) {
+                        font-size: 2rem;
+                    }
+                }
+                .types-pokemons__imgContainer {
+                    position: absolute;
+                    top: -24px;
+                    left: 127px;
+                    height: 73px;
+                    @include media(tablet) {
+                        left: 173px;
+                        height: 93px;
+                    }
+                    @include media(desktop) {
+                        left: 215px;
+                        height: 108px;
+                        top: -43px;
+                    }
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+            .leftAling {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.dark-mode {
+    background: #353535;
+    transition: .5s;
+}
+
+nav.dark-mode-nav {
+    background: linear-gradient(#292929, #252525);
+    transition: .5s;
+    border-bottom: 1px solid #35405a;
+}
+
+nav button.dark-mode-btn {
+    background: #e91e63;
+    transition: .5s;
+}

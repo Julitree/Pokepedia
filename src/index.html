@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PokePedia</title>
+</head>
+
+<body id="body">
+    <header>
+        <div id="site-header" class="site-header">
+            <div id="idHomeNav" class="site-header__logo-container">
+                <img src="assets/logo.png" alt="central-perk-logo" />
+            </div>
+            <form action="">
+                <input type="search" name="" id="searchPokemon" placeholder="Search Pokémon" aria-label="Search through site content" class="light-mode-search">
+                <button id="getPokemon" type="button" class="light-mode-search"><img src='assets/search.svg'></button>
+            </form>
+        </div>
+    </header>
+    <section id="loader" class="loader is-hidden">
+        <div class="pokeball c-loader u-flash"></div>
+    </section>
+    <!--Home-->
+    <section>
+        <div id="home" class="home  active">
+            <nav id="light-mode-nav" class="">
+                <button id="randomPokemo" class="">Random Pokémon</button>
+                <div id="switchButton" class="switch-button">
+                    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                    <label for="switch-label" class="switch-button__label"></label>
+                </div>
+            </nav>
+            <article>
+                <div class="hero">
+                    <h1 class="title">guide to pokemon types</h1>
+                    <div class="hero__content-wrapper">
+                        <div class="hero__image-container">
+                            <img src="assets/pokemonHome.png" alt="">
+                        </div>
+                        <p class="hero__paragraph">A pokémon's type can tell you a lot about it from there to find in the wild to the Moves it'll be able to use on the battlefield. Type is the key to unlocking a Pokémon power. Aclever Trainer should always consider type when picking
+                            a Pokémon strengths and weaknesses.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="types-pokemons">
+                <h2 class="types-pokemons__title">Here are the eighteen different</h2>
+                <h2 class="types-pokemons__title">pokémons types</h2>
+                <div id="typesPokemonsContainer" class="types-pokemons__container">
+                    <!--Grid created from view-list.js-->
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--Type Pokemon List-->
+    <section>
+        <div id="list" class="listTypeContainer">
+            <ul class="bread_container">
+                <li class="bread_container__item backHome">Home</li>
+                <li class="bread_container__item">Type Pokemon</li>
+            </ul>
+            <h1 class="title">Type Pokémon</h1>
+            <hr>
+            <div id='productListContainer' class="gridTypesPokemos"></div>
+        </div>
+    </section>
+    <!--Searched Pokemon-->
+    <section>
+        <div id="searchedPokemonContainer" class="searchedPokemonContainer">
+            <ul class="bread_container">
+                <li class="bread_container__item backHome">Home</li>
+                <li class="bread_container__item">Searched Pokemon</li>
+            </ul>
+            <div id="containerPokemon" class="containerPokemon"></div>
+        </div>
+    </section>
+    <!--Rander Pokemon-->
+    <section>
+        <div id="randomPokemon" class="randomPokemonContainer searchedPokemonContainer">
+            <ul class="bread_container">
+                <li class="bread_container__item backHome">Home</li>
+                <li class="bread_container__item">Random Pokemon</li>
+            </ul>
+            <div id="containerRandomPokemon" class="containerPokemon"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="infoContainer">
+            <p>All information from PokemonApi</p>
+            <p>Made By JulitreeDesign 2021</p>
+        </div>
+        <div class="imgLogofooterContainer">
+            <img src="assets/pokeball-logo.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

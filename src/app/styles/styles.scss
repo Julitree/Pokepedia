@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;700&display=swap');
+@import './colors';
+@import './header';
+@import './loader';
+@import './home';
+@import './pokemonsTypes.scss';
+@import './searchSection';
+@import './randomPokemon.scss';
+@import './footer';
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Antonio', sans-serif;
+    .container {
+        background: $primaryColor;
+    }
+}
+
+#home,
+#list,
+#searchedPokemonContainer,
+#randomPokemon {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    color: #ffda3f;
+    text-transform: uppercase;
+    @include media(tablet) {
+        font-size: 1.8rem;
+    }
+    @include media(desktop) {
+        font-size: 3rem;
+    }
+}
+
+hr {
+    width: 9%;
+    margin: 10px auto 0;
+    border: 1px solid #ffcf0e;
+}
+
+.bread_container {
+    background: linear-gradient(#d40000, #ad0707);
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 0.8rem;
+    &__item {
+        padding: 10px;
+    }
+    &__item:nth-child(2) {
+        color: $electric;
+    }
+    @include media(tablet) {
+        font-size: 1rem;
+    }
+}

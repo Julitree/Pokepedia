@@ -1,0 +1,70 @@
+            @import './colors';
+            @import './responsive';
+            header {
+                position: fixed;
+                z-index: 3;
+                width: 100%;
+                .site-header {
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+                    padding: 0 19px;
+                    background: linear-gradient(#393939, #252525);
+                    transition: .5s;
+                    @include media(tablet) {
+                        padding: 0 45px;
+                    }
+                    &__logo-container {
+                        width: 100%;
+                        height: 47px;
+                        cursor: pointer;
+                        display: inline-flex;
+                        transition: .5s;
+                        @include media(tablet) {
+                            justify-content: space-between;
+                            &:hover {
+                                transform: translateY(-5px);
+                            }
+                        }
+                        img {
+                            max-height: 100%;
+                        }
+                    }
+                    form {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        input {
+                            height: 30px;
+                            color: #949494;
+                            margin-right: 5px;
+                            box-sizing: border-box;
+                            padding-left: 9px;
+                        }
+                        button {
+                            height: 30px;
+                            width: 31px;
+                        }
+                    }
+                }
+            }
+            
+            header .dark-mode-header {
+                background: linear-gradient(#146dc7, #0052a5);
+                transition: .5s;
+            }
+            
+            .light-mode-search {
+                background: #444444;
+                border: 1px solid #635f5f;
+                transition: .5s;
+            }
+            
+            .dark-mode-search {
+                background: #2196f3;
+                border: 1px solid #2196f3;
+                transition: .5s;
+                &::placeholder {
+                    color: rgb(196, 196, 196);
+                }
+            }
